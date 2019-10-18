@@ -74,6 +74,9 @@ class ProductList extends React.Component {
               ))}
             </tbody>
           </table>
+          <div className="git-link">
+            <a href="https://github.com/spencerbartz/product-list" target="_blank" rel="noopener noreferrer">View Source on Github</a>
+          </div>
         </div>
       );
     } else {
