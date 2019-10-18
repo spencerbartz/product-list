@@ -1,50 +1,31 @@
-body {
-  font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
+.productList {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
 }
 
-ol, ul {
-  padding-left: 30px;
+.productList td, .productList th {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
 
-.board-row:after {
-  clear: both;
-  content: "";
-  display: table;
+.productList tr:nth-child(even) {
+  background-color: #ddd;
 }
 
-.status {
-  margin-bottom: 10px;
+.productList tr:hover {
+  background-color: #0a4abf; /* Blue taken from Best Buy website */
 }
 
-.square {
-  background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 34px;
+.productList th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #f6eb16; /* Yellow taken from Best Buy website */
+  color: black;
 }
 
-.square:focus {
-  outline: none;
-}
-
-.kbd-navigation .square:focus {
-  background: #ddd;
-}
-
-.game {
+.listContainer {
   display: flex;
-  flex-direction: row;
-}
-
-.game-info {
-  margin-left: 20px;
+  justify-content: center;
 }
